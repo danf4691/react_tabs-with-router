@@ -23,7 +23,7 @@ export const TabsPage = () => {
                 key={tab.id}
                 className={index === selectedTab ? 'is-active' : ''}
               >
-                <Link to={`../${tab.id}`} data-cy={`Tab${index + 1}`}>
+                <Link to={`/tabs/${tab.id}`} data-cy={`Tab${index + 1}`}>
                   {tab.title}
                 </Link>
               </li>
